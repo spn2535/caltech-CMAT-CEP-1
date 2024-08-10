@@ -3,7 +3,7 @@
   become: true
   become_user: root
   vars:
-   repo_url: https://github.com/Sonal0409/DevOpsCodeDemo.git
+   repo_url: https://github.com/spn2535/DevOpsCodeDemo.git
   tasks:
   - name: Clone the repo on worker node
     git: repo={{repo_url}} dest=/tmp/devopscode
