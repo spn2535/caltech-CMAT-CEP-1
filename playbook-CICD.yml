@@ -5,6 +5,8 @@
   vars:
    repo_url: https://github.com/spn2535/DevOpsCodeDemo.git
   tasks:
+  - name: update
+    command: sudo apt update
   - name: Clone the repo on worker node
     git: repo={{repo_url}} dest=/tmp/devopscode
   - name: Maven to build the code
